@@ -18,37 +18,61 @@
         android:text="@string/menuBtn_name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
 
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/lenearLayoutBtn"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:layout_marginTop="16dp"
-        android:onClick="onButton1Clicked"
-        android:text="@string/Btn1_name"
+        android:onClick="onlenearLayoutBtnClicked"
+        android:text="@string/lenearLayoutBtn_name"
         app:layout_constraintDimensionRatio="w,2:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/menuBtn" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/textViewBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:onClick="onButton2Clicked"
-        android:text="@string/Btn2_name"
+        android:onClick="ontextViewBtnClicked"
+        android:text="@string/textViewBtn_name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/lenearLayoutBtn"
         tools:layout_editor_absoluteX="115dp" />
 
+    <Button
+        android:id="@+id/imageViewBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:onClick="onimageViewBtnClicked"
+        android:text="@string/imageViewBtn_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBtn" />
 
+    <Button
+        android:id="@+id/gridViewBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:onClick="ongridViewBtnClicked"
+        android:text="@string/gridViewBtn_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBtn" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/guideline3"
+        android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"

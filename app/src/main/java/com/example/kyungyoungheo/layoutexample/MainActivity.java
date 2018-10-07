@@ -19,11 +19,20 @@ public class MainActivity extends AppCompatActivity {
         startActivity(menuIntent);
     }
 
-    public void onButton1Clicked(View v){
-        Toast.makeText(getApplicationContext(), "Button1 clicked!", Toast.LENGTH_LONG).show();
+    public void onlenearLayoutBtnClicked(View v){
+        Toast.makeText(getApplicationContext(), "lenearLayoutBtn clicked!", Toast.LENGTH_LONG).show();
     }
 
-    public void onButton2Clicked(View v){
-        Toast.makeText(getApplicationContext(), "Button2 clicked!", Toast.LENGTH_LONG).show();
+    public void ontextViewBtnClicked(View v){
+        Toast.makeText(getApplicationContext(), "textViewBtn clicked!", Toast.LENGTH_LONG).show();
     }
+
+    public void onimageViewBtnClicked(View v){
+        Toast.makeText(getApplicationContext(), "imageViewBtn clicked!", Toast.LENGTH_LONG).show();
+    }
+
+    public void ongridViewBtnClicked(View v){
+        Toast.makeText(getApplicationContext(), "gridViewBtnClicked clicked!", Toast.LENGTH_LONG).show();
+    }
+
 }

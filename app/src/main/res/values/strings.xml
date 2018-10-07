@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">LayoutExample</string>
     <string name="menuBtn_name">MenuBtn</string>
-    <string name="Btn1_name">Button1</string>
-    <string name="Btn2_name">Button2</string>
+    <string name="lenearLayoutBtn_name">lenearLayoutBtn</string>
+    <string name="textViewBtn_name">textViewBtn</string>
+    <string name="imageViewBtn_name">imageViewBtn</string>
+    <string name="gridViewBtn_name">gridViewBtn_name</string>
 </resources>
