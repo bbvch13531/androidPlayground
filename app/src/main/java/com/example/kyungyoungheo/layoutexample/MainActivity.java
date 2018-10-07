@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(menuIntent);
     }
 
-    public void onlenearLayoutBtnClicked(View v){
-        Toast.makeText(getApplicationContext(), "lenearLayoutBtn clicked!", Toast.LENGTH_LONG).show();
+    public void onlinearLayoutBtnClicked(View v){
+        Toast.makeText(getApplicationContext(), "linearLayoutBtn clicked!", Toast.LENGTH_LONG).show();
     }
 
     public void ontextViewBtnClicked(View v){

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">LayoutExample</string>
     <string name="menuBtn_name">MenuBtn</string>
-    <string name="lenearLayoutBtn_name">lenearLayoutBtn</string>
+    <string name="linearLayoutBtn_name">linearLayoutBtn</string>
     <string name="textViewBtn_name">textViewBtn</string>
     <string name="imageViewBtn_name">imageViewBtn</string>
     <string name="gridViewBtn_name">gridViewBtn_name</string>
