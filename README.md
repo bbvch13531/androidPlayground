@@ -1,7 +1,7 @@
 # AndroidPlayground
 Studying android freely as I want
 
-- Lenear Layout
+- Linear Layout
 - TextView
 - ImageView
 - Grid Layout
