@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onMenuBtnClicked(View v){
         Intent menuIntent = new Intent(getApplicationContext(), MenuActivity.class);
+        log.d("debugging","hello debug");
         startActivity(menuIntent);
     }
 
