@@ -1,8 +1,9 @@
 package com.example.kyungyoungheo.layoutexample;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -16,12 +17,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void onMenuBtnClicked(View v){
         Intent menuIntent = new Intent(getApplicationContext(), MenuActivity.class);
-        log.d("debugging","hello debug");
+        Log.d("debugging","hello debug");
         startActivity(menuIntent);
     }
 
     public void onlinearLayoutBtnClicked(View v){
-        Toast.makeText(getApplicationContext(), "linearLayoutBtn clicked!", Toast.LENGTH_LONG).show();
+//        Toast.makeText(getApplicationContext(), "linearLayoutBtn clicked!", Toast.LENGTH_LONG).show();
+        Intent linearLytIntent = new Intent(getApplicationContext(), LinearLytActivity.class);
+        startActivity(linearLytIntent);
     }
 
     public void ontextViewBtnClicked(View v){

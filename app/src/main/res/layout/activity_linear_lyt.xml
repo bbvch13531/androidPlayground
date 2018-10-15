@@ -19,8 +19,33 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="asdasdasdasdasd"/>
+                android:padding="20dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorPomo"
+                android:textColor="#ffffff"
+                android:text="TextView1"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorPomo"
+                android:text="TextView2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorPomo"
+                android:text="TextView3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorPomo"
+                android:text="TextView4"/>
         </LinearLayout>
 
         <LinearLayout
