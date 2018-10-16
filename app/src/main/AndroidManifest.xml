@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".MenuActivity" />
-        <activity android:name=".LinearLytActivity"></activity>
+        <activity android:name=".LinearLytActivity" />
+        <activity android:name=".TableLytActivity"></activity>
     </application>
 
 </manifest>

@@ -39,4 +39,8 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "gridViewBtnClicked clicked!", Toast.LENGTH_LONG).show();
     }
 
+    public void onTableViewBtnClicked(View v){
+        Intent TableLytIntent = new Intent(getApplicationContext(), TableLytActivity.class);
+        startActivity(TableLytIntent);
+    }
 }

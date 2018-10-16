@@ -4,5 +4,6 @@
     <string name="linearLayoutBtn_name">linearLayoutBtn</string>
     <string name="textViewBtn_name">textViewBtn</string>
     <string name="imageViewBtn_name">imageViewBtn</string>
-    <string name="gridViewBtn_name">gridViewBtn_name</string>
+    <string name="gridViewBtn_name">gridViewBtn</string>
+    <string name="tableViewBtn_name">tableViewBtn</string>
 </resources>
