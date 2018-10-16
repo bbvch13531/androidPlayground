@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="abcde http://www.naver.com efgh a@a.com ijkl 1234-5678"
+        android:text="abcde http://www.naver.com efgh a@a.com ijkl 010-1234-5678"
         android:autoLink="web|email|phone"/>
     <TextView
         android:layout_width="match_parent"

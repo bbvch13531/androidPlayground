@@ -5,5 +5,7 @@ Studying android freely as I want
 - TextView
 - ImageView
 - Grid Layout
+- Frame Layout
+- ScrollView
 
 test git rebase
