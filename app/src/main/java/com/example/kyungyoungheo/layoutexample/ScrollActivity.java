@@ -18,7 +18,7 @@ public class ScrollActivity extends AppCompatActivity {
         setContentView(R.layout.activity_scroll);
 
         imageView = (ImageView) findViewById(R.id.imageView);
-
+        imageView.setTag(R.drawable.image01);
 //        Resources res = getResources();
 //        bitmap = (BitmapDrawable) res.getDrawable(R.drawable.image01);
 //        int bitmapWidth = bitmap.getIntrinsicWidth();
@@ -37,8 +37,18 @@ public class ScrollActivity extends AppCompatActivity {
     }
 
     private void changeImage(){
+        int imageId = (int)imageView.getTag();
+
         Resources res = getResources();
-        bitmap = (BitmapDrawable) res.getDrawable(R.drawable.image02);
+
+        if(imageId == R.drawable.image02){
+            bitmap = (BitmapDrawable) res.getDrawable(R.drawable.image01);
+            imageView.setTag(R.drawable.image01);
+        }
+        else{
+            bitmap = (BitmapDrawable) res.getDrawable(R.drawable.image02);
+            imageView.setTag(R.drawable.image02);
+        }
 
         int bitmapWidth = bitmap.getIntrinsicWidth();
         int bitmapHeight = bitmap.getIntrinsicHeight();
