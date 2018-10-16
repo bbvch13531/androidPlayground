@@ -19,14 +19,17 @@ public class ScrollActivity extends AppCompatActivity {
 
         imageView = (ImageView) findViewById(R.id.imageView);
 
-        Resources res = getResources();
-        bitmap = (BitmapDrawable) res.getDrawable(R.drawable.image01);
-        int bitmapWidth = bitmap.getIntrinsicWidth();
-        int bitmapHeight = bitmap.getIntrinsicHeight();
+//        Resources res = getResources();
+//        bitmap = (BitmapDrawable) res.getDrawable(R.drawable.image01);
+//        int bitmapWidth = bitmap.getIntrinsicWidth();
+//        int bitmapHeight = bitmap.getIntrinsicHeight();
+//
+//        imageView.setImageDrawable(bitmap);
+//        imageView.getLayoutParams().width = bitmapWidth;
+//        imageView.getLayoutParams().height = bitmapHeight;
 
-        imageView.setImageDrawable(bitmap);
-        imageView.getLayoutParams().width = bitmapWidth;
-        imageView.getLayoutParams().height = bitmapHeight;
+//        imageView.setImageResource (R.drawable.image01);
+//        imageView.setImageDrawable (bitmap);
     }
 
     public void onScrollBtnClicked(View v){
