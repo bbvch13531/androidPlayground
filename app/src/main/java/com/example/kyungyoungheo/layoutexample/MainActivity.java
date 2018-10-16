@@ -43,4 +43,9 @@ public class MainActivity extends AppCompatActivity {
         Intent TableLytIntent = new Intent(getApplicationContext(), TableLytActivity.class);
         startActivity(TableLytIntent);
     }
+
+    public void onScrollViewBtnClicked(View v){
+        Intent ScrollLytIntent = new Intent(getApplicationContext(), ScrollActivity.class);
+        startActivity(ScrollLytIntent);
+    }
 }

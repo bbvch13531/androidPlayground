@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".MenuActivity" />
         <activity android:name=".LinearLytActivity" />
-        <activity android:name=".TableLytActivity"></activity>
+        <activity android:name=".TableLytActivity" />
+        <activity android:name=".ScrollActivity"></activity>
     </application>
 
 </manifest>
