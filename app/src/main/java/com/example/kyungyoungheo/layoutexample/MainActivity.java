@@ -48,4 +48,9 @@ public class MainActivity extends AppCompatActivity {
         Intent ScrollLytIntent = new Intent(getApplicationContext(), ScrollActivity.class);
         startActivity(ScrollLytIntent);
     }
+
+    public void onFrameViewBtnClicked(View v){
+        Intent FrameLytIntent = new Intent(getApplicationContext(), FrameActivity.class);
+        startActivity(FrameLytIntent);
+    }
 }

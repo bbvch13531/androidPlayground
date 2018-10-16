@@ -7,4 +7,5 @@
     <string name="gridViewBtn_name">gridViewBtn</string>
     <string name="tableViewBtn_name">tableViewBtn</string>
     <string name="scrollViewBtn_name">scrollViewBtn</string>
+    <string name="frameViewBtn_name">frameViewBtn</string>
 </resources>

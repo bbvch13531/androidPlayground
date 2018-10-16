@@ -19,7 +19,8 @@
         <activity android:name=".MenuActivity" />
         <activity android:name=".LinearLytActivity" />
         <activity android:name=".TableLytActivity" />
-        <activity android:name=".ScrollActivity"></activity>
+        <activity android:name=".ScrollActivity" />
+        <activity android:name=".FrameActivity"></activity>
     </application>
 
 </manifest>
