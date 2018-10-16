@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ontextViewBtnClicked(View v){
-        Toast.makeText(getApplicationContext(), "textViewBtn clicked!", Toast.LENGTH_LONG).show();
+        Intent TextViewLytIntent = new Intent(getApplicationContext(), TextViewActivity.class);
+        startActivity(TextViewLytIntent);
     }
 
     public void onimageViewBtnClicked(View v){

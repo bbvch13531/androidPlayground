@@ -20,7 +20,8 @@
         <activity android:name=".LinearLytActivity" />
         <activity android:name=".TableLytActivity" />
         <activity android:name=".ScrollActivity" />
-        <activity android:name=".FrameActivity"></activity>
+        <activity android:name=".FrameActivity" />
+        <activity android:name=".TextViewActivity"></activity>
     </application>
 
 </manifest>
