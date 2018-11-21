@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LayoutExample</string>
+    <string name="menuBtn_name">MenuBtn</string>
+    <string name="linearLayoutBtn_name">linearLayoutBtn</string>
+    <string name="textViewBtn_name">textViewBtn</string>
+    <string name="imageViewBtn_name">imageViewBtn</string>
+    <string name="gridViewBtn_name">gridViewBtn</string>
+    <string name="tableViewBtn_name">tableViewBtn</string>
+    <string name="scrollViewBtn_name">scrollViewBtn</string>
+    <string name="frameViewBtn_name">frameViewBtn</string>
+
+    <string name="long_text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc faucibus sed sem sit amet efficitur. Praesent suscipit tempor condimentum. Integer vel interdum odio, dapibus mollis nibh. Cras rutrum tristique velit eget scelerisque. Integer a pretium felis. Nam ac consectetur arcu, congue vehicula nisi. Etiam id mollis leo, eget molestie ipsum. Fusce neque orci, lobortis sed velit a, molestie sagittis augue. Aenean ac congue lorem, vehicula scelerisque tortor. Donec porta massa lorem, eu elementum enim dictum in. Vivamus in tortor mauris. Fusce placerat magna iaculis, condimentum tellus in, rhoncus leo. Pellentesque eget ligula quis dolor suscipit facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+    </string>
+</resources>
