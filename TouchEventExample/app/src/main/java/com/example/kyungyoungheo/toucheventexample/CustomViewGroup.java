@@ -37,7 +37,10 @@ public class CustomViewGroup extends FrameLayout {
                 break;
             case MotionEvent.ACTION_MOVE:
                 // 차이가 20이상 나면 이벤트를 가로챈다.
-                if(Math.abs(initialY - event.getY()) >= 20 ) return true;
+                if(Math.abs(initialY - event.getY()) >= 20 ){
+                    Log.i("TouchEventExample","Event Occured");
+                    return true;
+                }
         }
         return super.onInterceptTouchEvent(event);
     }
