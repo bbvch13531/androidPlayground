@@ -1,6 +1,7 @@
 # AndroidPlayground
 Studying android freely as I want
 
+## Layout example
 - Linear Layout
 - TextView
 - ImageView
@@ -8,4 +9,5 @@ Studying android freely as I want
 - Frame Layout
 - ScrollView
 
+## TouchEvent example
 test git rebase
