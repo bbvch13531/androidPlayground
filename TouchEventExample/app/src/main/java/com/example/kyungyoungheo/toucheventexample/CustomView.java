@@ -13,13 +13,13 @@ public class CustomView extends View {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent event) {
-        Log.d("TouchEventExample","CustomView dispatchTouchEvent() >> " + event.getAction());
+        Log.i("TouchEventExample","CustomView dispatchTouchEvent() >> " + event.getAction());
         return super.dispatchTouchEvent(event);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        Log.d("TouchEventExample","CustomView onTouchEvent() >> " + event.getAction());
+        Log.i("TouchEventExample","CustomView onTouchEvent() >> " + event.getAction());
         return super.onTouchEvent(event);
     }
 }
