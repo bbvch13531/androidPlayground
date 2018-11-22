@@ -20,6 +20,9 @@ public class CustomView extends View {
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         Log.i("TouchEventExample","CustomView onTouchEvent() >> " + event.getAction());
-        return super.onTouchEvent(event);
+
+//        return super.onTouchEvent(event);
+        // return true to add onInterceptTouchEvent
+        return true;
     }
 }

@@ -6,6 +6,8 @@ import android.view.MotionEvent;
 import android.widget.FrameLayout;
 
 public class CustomViewGroup extends FrameLayout {
+    private float initialY = 0;
+
     public CustomViewGroup(Context context){
         super(context);
     }
@@ -19,6 +21,24 @@ public class CustomViewGroup extends FrameLayout {
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         Log.i("TouchEventExample","CustomViewGroup onTouchEvent() >> " + event.getAction());
-        return super.onTouchEvent(event);
+
+        // return true to add onInterceptTouchEvent
+        return true;
+    }
+
+    @Override
+    public boolean onInterceptTouchEvent(MotionEvent event) {
+        Log.i("TouchEventExample", "CustomViewGroup onInterceptTouchEvent() >> " + event.getAction());
+
+        switch (event.getAction()){
+            case MotionEvent.ACTION_DOWN:
+                // Save coordinate Y when TouchDown occur
+                initialY = event.getY();
+                break;
+            case MotionEvent.ACTION_MOVE:
+                // 차이가 20이상 나면 이벤트를 가로챈다.
+                if(Math.abs(initialY - event.getY()) >= 20 ) return true;
+        }
+        return super.onInterceptTouchEvent(event);
     }
 }
