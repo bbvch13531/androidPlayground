@@ -1,4 +1,4 @@
-package com.example.kyungyoungheo.toucheventexample;
+package com.example.kyungyoungheo.toucheventexample.TouchEvent;
 
 import android.content.Context;
 import android.util.Log;

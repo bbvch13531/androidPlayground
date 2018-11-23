@@ -8,7 +8,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/touchEvent"
@@ -18,10 +19,11 @@
             android:layout_height="50dp" />
 
         <Button
-            android:id="@+id/buttonView"
-            android:text="Button"
-            android:layout_width="100dp"
-            android:layout_height="100dp" />
+            android:id="@+id/touchListener"
+            android:text="TouchListener Example"
+            android:onClick="onTouchListener"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
 
     </LinearLayout>
 

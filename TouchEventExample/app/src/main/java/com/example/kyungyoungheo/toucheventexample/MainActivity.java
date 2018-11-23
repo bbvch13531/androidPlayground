@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.kyungyoungheo.toucheventexample.TouchEvent.TouchEvent;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -16,6 +18,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void onTouchEvent(View view){
         Intent intent = new Intent(this,TouchEvent.class);
+        startActivity(intent);
+    }
+
+    public void onTouchListener(View view){
+        Intent intent = new Intent(this,TouchListener.class);
         startActivity(intent);
     }
 }
