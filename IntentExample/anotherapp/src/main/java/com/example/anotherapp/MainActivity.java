@@ -21,7 +21,7 @@ public class MainActivity extends Activity {
                 "com.example.kyungyoungheo.intentexample",
                 "com.example.kyungyoungheo.intentexample.MainActivity");
         intent.setComponent(componentName);
-
+        intent.putExtra("NAME","10160h30");
         startActivity(intent);
     }
 }
