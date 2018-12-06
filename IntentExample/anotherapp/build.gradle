@@ -6,7 +6,7 @@ android {
 
 
     defaultConfig {
-        applicationId "com.example.anotherapp"
+        applicationId "com.example.kyungyoungheo.anotherapp"
         minSdkVersion 23
         targetSdkVersion 28
         versionCode 1
