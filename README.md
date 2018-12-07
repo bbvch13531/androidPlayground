@@ -2,6 +2,7 @@
 Studying android freely as I want
 
 ## Layout example
+Implement several layouts
 - Linear Layout
 - TextView
 - ImageView
@@ -10,4 +11,11 @@ Studying android freely as I want
 - ScrollView
 
 ## TouchEvent example
-test git rebase
+Test onTouchListener, onLongClickListener.
+
+## Intent example
+Send data via serialization and parcel through app.
+- anotherapp -> app
+
+## My Music Player
+- 
