@@ -8,7 +8,8 @@ import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.kyungyoungheo.anotherapp.CustomData;
+import com.example.kyungyoungheo.anotherapp.SerialData;
+import com.example.kyungyoungheo.anotherapp.ParcelData;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,19 +17,31 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        CustomData customData = new CustomData();
+
+        SerialData serialData = new SerialData();
+        ParcelData parcelData = new ParcelData();
         Intent intent = getIntent();
         try {
-            customData = (CustomData) intent.getSerializableExtra("CUSTOM_DATA");
-        } catch (Exception e){
-            Log.d("customdata","exception");
-        }
-        if(customData==null){
-            Toast.makeText(this,"Cannot read CustomData",Toast.LENGTH_LONG).show();
-            return ;
-        }
+            parcelData = (ParcelData) intent.getParcelableExtra("PARCEL_DATA");
+//            serialData = (SerialData) intent.getSerializableExtra("SERIAL_DATA");
 
-        TextView receivedStr = (TextView) findViewById(R.id.intent_recieved_data);
-        receivedStr.setText("CustomData : "+customData.getmStringName() + " "+customData.getmIntAge());
+        } catch (Exception e){
+            Log.d("serialData","exception");
+        }
+//
+//        if(serialData==null){
+//            Toast.makeText(this,"Cannot read serialData",Toast.LENGTH_LONG).show();
+//        }
+//        else {
+//            TextView receivedStr = (TextView) findViewById(R.id.intent_recieved_data);
+//            receivedStr.setText("SerialData : "+serialData.getmStringName() + " "+serialData.getmIntAge());
+//        }
+        if(parcelData==null){
+            Toast.makeText(this,"Cannot read parcelData",Toast.LENGTH_LONG).show();
+        }
+        else{
+            TextView receivedStr = (TextView) findViewById(R.id.intent_recieved_data);
+            receivedStr.setText("ParcelData : "+parcelData.getmStringName() + " "+parcelData.getmIntAge());
+        }
     }
 }

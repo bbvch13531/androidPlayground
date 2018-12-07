@@ -2,7 +2,7 @@ package com.example.kyungyoungheo.anotherapp;
 
 import java.io.Serializable;
 
-public class CustomData implements Serializable {
+public class SerialData implements Serializable {
     private static final long serialVersionUID = 987654321L;
 
     private int mIntAge = 0;
@@ -28,4 +28,5 @@ public class CustomData implements Serializable {
     public void setmStringName(String name){
         mStringName = name;
     }
+
 }

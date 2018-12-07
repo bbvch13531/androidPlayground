@@ -5,9 +5,25 @@
     android:orientation="vertical">
 
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/SendSerialData"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Run intent example app"
-        android:onClick="onBtnClick"/>
+        android:layout_gravity="center"
+        android:text="Send SerialData"
+        android:onClick="onSerialClick"/>
+    <Button
+        android:id="@+id/SendParcelData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Send ParcelData"
+        android:onClick="onParcelClick"/>
+    <Button
+        android:id="@+id/SendBundleData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Send BundleData"
+        android:onClick="onBundleClick"/>
 
 </LinearLayout>
