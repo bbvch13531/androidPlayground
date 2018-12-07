@@ -25,26 +25,34 @@ public class MainActivity extends AppCompatActivity {
 
         SerialData serialData ;
         ParcelData parcelData ;
+        Bundle bundle;
         Intent intent = getIntent();
 
-        parcelData = (ParcelData) intent.getParcelableExtra("PARCEL_DATA");
-        serialData = (SerialData) intent.getSerializableExtra("SERIAL_DATA");
+        int flag = intent.getIntExtra("FLAG",0);
 
         TextView receivedStr = (TextView) findViewById(R.id.intent_recieved_data);
 
-        if(parcelData!= null){
-            receivedStr.setText("ParcelData : "+parcelData.getmStringName() + " "+parcelData.getmIntAge());
+        switch(flag){
+            case 0:
+                // ERROR
+                break;
+            case 1:
+                //Serialization data
+                serialData = (SerialData) intent.getSerializableExtra("SERIAL_DATA");
+                receivedStr.setText("SerialData : "+serialData.getmStringName() + " "+serialData.getmIntAge());
+                break;
+            case 2:
+                //Parcel data
+                parcelData = (ParcelData) intent.getParcelableExtra("PARCEL_DATA");
+                receivedStr.setText("ParcelData : "+parcelData.getmStringName() + " "+parcelData.getmIntAge());
+                break;
+            case 3:
+                //Bundle data
+                bundle = intent.getBundleExtra("BUNDLE_DATA");
+                String name = bundle.getString("NAME");
+                int age = bundle.getInt("AGE");
+                receivedStr.setText("SerialData : "+name + " "+age);
+                break;
         }
-        else if(serialData!=null){
-            receivedStr.setText("SerialData : "+serialData.getmStringName() + " "+serialData.getmIntAge());
-        }
-        else{
-
-        }
-
-
-
-
-
     }
 }
